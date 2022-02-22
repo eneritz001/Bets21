@@ -242,7 +242,7 @@ public void open(boolean initializeMode){
 			  emf = Persistence.createEntityManagerFactory("objectdb:"+fileName);
 			  db = emf.createEntityManager();
 		} else {
-			Map<String, String> properties = new HashMap<String, String>();
+			Map<String, String> properties = new HashMap<String, String>(); 
 			  properties.put("javax.persistence.jdbc.user", c.getUser());
 			  properties.put("javax.persistence.jdbc.password", c.getPassword());
 
