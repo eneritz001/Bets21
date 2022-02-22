@@ -19,6 +19,7 @@ import configuration.ConfigXML;
 import configuration.UtilDate;
 import domain.Event;
 import domain.Question;
+import domain.User;
 import exceptions.QuestionAlreadyExist;
 
 /**
@@ -261,5 +262,14 @@ public boolean existQuestion(Event event, String question) {
 		db.close();
 		System.out.println("DataBase closed");
 	}
+	
+	public User isLogin(String log, String pass) {
+		
+		User us = db.find(User.class, log);
+		return null;
+	}
+	
+	
+	
 	
 }
